@@ -2,7 +2,9 @@
 
 [Русский](README.ru.md)
 
-Codex skills and small Python scripts for direct Asana REST API workflows.
+Agent skills and small Python scripts for direct Asana REST API workflows.
+
+The scripts are plain Python over the Asana REST API, so they run from any agent runtime that can execute Python — Codex, Claude Code, Cursor, Antigravity, Windsurf — or from a plain shell. `SKILL.md` carries the cross-runtime skill metadata; `agents/openai.yaml` is the Codex/OpenAI adapter.
 
 This repository is useful when the standard Asana connector is read-only, unavailable, or blocked by a tool guard, but you still need a narrow, auditable way to automate Asana actions with your own personal access token.
 
@@ -173,9 +175,9 @@ Use `--json` when another tool or agent should consume the output.
 
 These skills are low-level Asana helpers. They do not decide which task should be created, which workspace or project is correct, or whether a task is "done". Keep those decisions in a project-specific wrapper skill or process document. The wrapper can call these scripts through stable environment variables such as `ASANA_ACCESS_TOKEN`, `ASANA_ENV_FILE`, or `--env-file`, and pass concrete gids it owns.
 
-## Codex Approvals
+## Agent Approvals
 
-The scripts call the Asana API, so Codex may ask for network approval. Approve only the specific script entrypoints listed in [`docs/codex-approvals.md`](docs/codex-approvals.md). Do not approve broad prefixes such as `python3`.
+The scripts call the Asana API over the network, so an agent runtime may ask for approval. Approve only the specific script entrypoints listed in [`docs/codex-approvals.md`](docs/codex-approvals.md); do not approve broad prefixes such as `python3`. The document uses Codex as the worked example, but the same narrow-entrypoint rule applies to Claude Code, Cursor, Antigravity, Windsurf, or any runtime with a permission model.
 
 ## Safety Model
 
