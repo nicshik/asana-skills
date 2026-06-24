@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana Project Sections"
+  short_description: "List or create Asana project sections via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-project-sections as a narrow fallback to list an Asana project's sections, or create a new section, through the direct Asana REST API when the normal connector cannot, always pass a numeric project gid, treat the default as a read-only listing and only write with --create, prefer --dry-run before creating, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

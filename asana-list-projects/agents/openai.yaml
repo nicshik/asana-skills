@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana List Projects"
+  short_description: "List Asana projects via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-list-projects as a read-only fallback to list Asana projects in a workspace or team through the direct Asana REST API when the normal connector cannot enumerate them, pass exactly one of --workspace or --team as a numeric gid, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

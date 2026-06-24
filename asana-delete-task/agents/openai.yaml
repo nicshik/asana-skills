@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana Delete Task"
+  short_description: "Delete an Asana task via API with a confirm guard"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-delete-task as a guarded fallback to delete an Asana task through the direct Asana REST API when the normal connector cannot, always run --dry-run first to read and confirm the task, require --confirm matching the resolved task gid for a live delete, treat task_not_found as a target task problem rather than a missing token, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

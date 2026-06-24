@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana Search Tasks"
+  short_description: "Search Asana tasks via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-search-tasks as a read-only fallback to search Asana tasks in a workspace by full-text query through the direct Asana REST API when the normal connector cannot run a search, pass a numeric workspace gid and a text query, treat premium_required as a plan limitation rather than a missing token, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

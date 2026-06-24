@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana Comment Task"
+  short_description: "Add a comment to an Asana task via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-comment-task as a narrow fallback to post a single comment story to an Asana task through the direct Asana REST API when the normal connector cannot comment, provide exactly one of --text or --text-file, prefer a numeric task gid, run --dry-run first to confirm the target, treat task_not_found as a target task problem rather than a missing token, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

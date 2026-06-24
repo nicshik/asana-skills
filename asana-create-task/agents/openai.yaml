@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana Create Task"
+  short_description: "Create an Asana task via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-create-task as a fallback to create an Asana task through the direct Asana REST API when the normal connector is unavailable, always pass a container (--project or --workspace), prefer --dry-run to confirm the payload first, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

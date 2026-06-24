@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana List Tags"
+  short_description: "List Asana workspace tags via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-list-tags as a read-only fallback to list the tags in an Asana workspace through the direct Asana REST API when the normal connector cannot enumerate them, pass the workspace gid via --workspace, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

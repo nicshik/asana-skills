@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana API"
+  short_description: "Call any Asana REST endpoint via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-api as a low-level fallback to call an arbitrary Asana REST API endpoint by HTTP method and path when the normal connector cannot reach it, pass query parameters with --query and body fields with --field or --data-file, double-check before sending writes, treat bad_argument as a local input problem rather than a missing token, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

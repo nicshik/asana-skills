@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana Read Task"
+  short_description: "Read Asana task details via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-read-task as a read-only fallback to read an Asana task through the direct Asana REST API when the normal connector cannot return required fields or stories, prefer a numeric task gid, treat task_not_found as a target task problem rather than a missing token, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

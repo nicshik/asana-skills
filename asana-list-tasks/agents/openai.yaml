@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana List Tasks"
+  short_description: "List Asana tasks via API"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-list-tasks as a read-only fallback to list Asana tasks for a project, section, tag, or assignee through the direct Asana REST API when the normal connector cannot enumerate them, pass exactly one selector and use --workspace with --assignee, treat bad_argument as a selector problem rather than a missing token, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false

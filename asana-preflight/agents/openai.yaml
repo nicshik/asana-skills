@@ -1,0 +1,8 @@
+interface:
+  display_name: "Asana Preflight"
+  short_description: "Verify Asana API access and list workspaces"
+  brand_color: "#F06A6A"
+  default_prompt: "Use $asana-preflight as a read-only check to confirm a local ASANA_ACCESS_TOKEN is valid through the direct Asana REST API, report the authenticated user, email, and reachable workspaces, treat permission_denied as a rejected token rather than a missing one, and never print the access token."
+
+policy:
+  allow_implicit_invocation: false
